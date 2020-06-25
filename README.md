@@ -14,6 +14,8 @@ Tech Modules->Java Fundamentals->Topics to Learn:
 Tech Module->OOPS / Inheritance:
 
 ->Hands-on Assignments for Classes and Objects
+
 ->Hands-on Assignments for Encapsulation / Abstraction
+
 ->Hands-on Assignments for Inheritance
 
