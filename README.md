@@ -2,7 +2,8 @@
 WTN-Tasks
 
 PBL:
-Tech Modules->Java Fundamentals->Topics to Learn:
+
+**Tech Modules->Java Fundamentals->Topics to Learn:**
 
 ->Hands-on Assignments for Language Basics.
 
@@ -11,7 +12,7 @@ Tech Modules->Java Fundamentals->Topics to Learn:
 ->Hands-on Assignments for Arrays.
 
 
-Tech Module->OOPS / Inheritance:
+**Tech Module->OOPS / Inheritance: **
 
 ->Hands-on Assignments for Classes and Objects
 
