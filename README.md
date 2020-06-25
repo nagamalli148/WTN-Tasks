@@ -12,7 +12,7 @@ PBL:
 ->Hands-on Assignments for Arrays.
 
 
-**Tech Module->OOPS / Inheritance: **
+**Tech Module->OOPS / Inheritance:**
 
 ->Hands-on Assignments for Classes and Objects
 
