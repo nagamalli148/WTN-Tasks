@@ -26,3 +26,6 @@ public class DailyTasks {
 
 3. Create a new package called com.wipro.test;
 4. Create a class named TestStringConcat to test the functionality of doStringConcat method [hint: use assertEquals method]
+
+
+References: http://tutorials.jenkov.com/java-unit-testing/simple-test.html
