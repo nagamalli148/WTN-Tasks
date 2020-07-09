@@ -22,5 +22,7 @@ public class DailyTasks {
 		return str.contains(a);
 	}
 }
+
+
 3. Create a new package called com.wipro.test;
 4. Create a class named TestStringConcat to test the functionality of doStringConcat method [hint: use assertEquals method]
