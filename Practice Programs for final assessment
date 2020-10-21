@@ -1,0 +1,84 @@
+/*
+Find result after alternate add_sub on N
+Given a number N (1<=N<=10000), and an option opt=1 or 2, find the result as per below rules, If opt=1, 
+Result= N-(N-1)+(N-2) - (N-3) +(N-4) ......till 1
+If opt=2
+Result=N+(N-1)- (N-2) + (N-3) - (N-4).........till 1
+Example1: If N = 6 and opt=1 
+Result =6-5+4-3+2-1=3
+----------------------------------------------------
+Example2, If N = 6, and opt=2
+Result =6+5-4+3-2+1= 9          
+*********************Explanation******************************
+sum=0 -> 0+6=6
+n=6-1=5
+opt==2,
+n%2!=0->goto else->5>0,n%2!=0->sum+=n;->sum=6+5=11,
+n=4,n>0->n%2==0,sum=sum-n->sum=11-4=7->
+n=3->sum=sum+n->sum=7+3=10->
+n=2->sum=sum-n->sum=10-2=8
+n=1->sum=sum+n->sum=8+1=9
+--------------------------------------------------------------------            
+The function prototype should be as below-
+int AddSub(int N, int opt);
+
+*/
+
+
+
+import java.util.*;
+public class MyClass {
+    int AddSub(int n,int opt){
+        int sum=0;
+        sum+=n;
+        n=n-1;
+        if(opt==2){
+            if(n%2==0){
+                while(n>0){ 
+                    if(n%2==0)
+                    sum+=n;
+                    else
+                    sum-=n;
+                    n--;
+                }
+            }
+            else{
+                while(n>0){
+                    if(n%2==0)
+                    sum-=n;
+                    else
+                    sum+=n;
+                    n--;
+                }
+            }
+        }
+        else{
+            if(n%2==0){
+                while(n>0){
+                    if(n%2==0)
+                    sum-=n;
+                    else
+                    sum+=n;
+                    n--;
+                }
+            }
+            else{
+                while(n>0){
+                    if(n%2==0)
+                    sum+=n;
+                    else
+                    sum-=n;
+                    n--;
+                }
+            }  
+        }
+        return sum;
+    }
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int opt=sc.nextInt();
+        MyClass obj=new MyClass();
+        System.out.println(obj.AddSub(n,opt));
+    }
+}
